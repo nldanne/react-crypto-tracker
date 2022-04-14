@@ -1,0 +1,24 @@
+@import "properties.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+.App {
+  /*background-color: $blue-black;*/
+  color: $blue-black;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
