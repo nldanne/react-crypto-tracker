@@ -28,7 +28,7 @@ return { ref, isComponentVisible, setIsComponentVisible };
 const Header = () => {
   const { currency, setCurrency } = CryptoState();
   //const [isClicked, setIsClicked] = useState(false);
-  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(true);
+  const { ref, isComponentVisible, setIsComponentVisible } = useComponentVisible(false);
 
   const currencyHandler = (event) => {
     setCurrency(event.target.textContent);
