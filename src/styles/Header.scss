@@ -1,0 +1,76 @@
+@import "properties.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
+
+header {
+  width: 100vw;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0px 2px 15px -4px #795BFF; 
+  box-shadow: 0px 2px 15px -4px #795BFF;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    flex: 1;
+    margin-left: 100px;
+  }
+}
+
+.dropdown {
+  width: 70px;
+  position: relative;
+  margin-right: 100px;
+  font-size: 0.8rem;
+
+  .dropdown-btn {
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+   position: absolute;
+   top: 115%;
+   left: 0;
+   padding: 2px;
+   background-color: #fff;
+   box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+   font-weight: 400;
+   color: #333;
+   width: inherit;
+   border-radius: 4px;
+  }
+
+  .dropdown-item {
+    padding: 5px 0 5px 10px;
+    cursor: pointer;
+    transition: all 0,2s;
+    list-style-type: none;
+
+    &:hover {
+      background-color: aqua;
+    }
+  }
+
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+  .navbar h1 {
+    margin-left: 0;
+  }
+
+  .dropdown {
+    margin-right: 0;
+  }
+}
+
+
