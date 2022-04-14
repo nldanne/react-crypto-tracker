@@ -1,0 +1,82 @@
+@import "properties.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
+
+.cointable {
+  max-width: 800px;
+  margin: 5rem auto;
+
+  .cointable-container {
+    text-align: center;
+
+    h4 {
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-align: left;
+      margin: 0 1rem;
+
+    }
+
+    /* Search input */
+    .search {
+      max-width: 500px;
+      padding: 1rem 0;
+      margin: 1rem auto 0rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        width: 100%;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      button {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        padding: 11px 15px;
+        border-radius: 2px;
+        border: none;
+      }
+    }
+
+    /* Table head */
+
+    .table-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $light-blue;
+      box-shadow: 0 0 12px $light-blue;
+      border-radius: 4px;
+      margin: 1rem 1rem 0.5rem 1rem;
+      padding: 0.7rem 1rem;
+      font-weight: 600;
+
+      .coin-name {
+        margin-left: -4rem;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .cointable-container h4{
+    font-size: 1rem;
+}
+
+  .search {
+    width: 90%;
+    margin: 0 1rem;
+
+    button {
+      font-size: 0.7rem;
+    }
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}

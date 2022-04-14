@@ -1,0 +1,39 @@
+@import "properties.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
+
+
+.coin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $light-blue;
+ //@extend box-shadow: 0 0 12px #18191b;
+  border-radius: 8px;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+
+  &:hover {
+    transition: 0.3 ease-in-out;
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+
+  .img-symbol{
+    display: flex;
+    align-items: center;
+    
+    img {
+      height: 40px;
+      margin-right: 8px;
+      width: auto;
+    }
+  }
+
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .hide-mobile {
+    display: none;
+  }
+}
