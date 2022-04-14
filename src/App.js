@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import CoinPage from './pages/CoinPage';
 import './styles/App.scss';
 
-function App() {
+function App() { 
   return (
     <div className="App">
       <Header />
