@@ -3,25 +3,29 @@
 
 .banner {
   width: 100vw;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
 
 }
 
 
 .banner-content {
-  height: 350px;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
   justify-content: space-between;
+  width: auto;
   
   .tagline {
     text-align: center;
+
 
     h2 {
       font-weight: 700;
       margin-bottom: 15px;
       font-size: 3rem;
+      line-height: 2.2rem;
     }
 
     h3 {

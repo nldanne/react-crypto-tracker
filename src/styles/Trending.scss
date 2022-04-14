@@ -4,9 +4,9 @@
 .trending {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: inherit;
   height: auto;
-  margin: auto;
+  margin: 1rem;
 
   h4 {
     font-weight: 600;
@@ -17,10 +17,10 @@
 }
 
 .trending-container {
-  width: 800px;
   height: fit-content;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 
   .trending-item {
     display: flex;
@@ -29,6 +29,10 @@
     cursor: pointer;
     text-transform: uppercase;
     color: $blue-black;
+    background-color: $white;
+    box-shadow: 0 0 12px $light-blue;
+    border-radius: 12px;
+    padding: 1rem 0;
 
     span {
       font-size: 0.8rem;
@@ -39,7 +43,7 @@
       }
       
       .green {
-        color: $blue;
+        color: $green;
       }
     }
     
@@ -55,47 +59,29 @@
 @media (max-width: $breakpoint-tablet) {
   .trending {
     margin: auto;
-    max-width: 740px;
     margin: 2rem 1rem;
-
-  /* h4{
-      font-size: 1rem;
-    } */
-
-    .trending-container {
-      width: 95%;
-     justify-content: space-around;
-    }
   }
 }
 
 @media (max-width: $breakpoint-mobile) {
   .trending {
-    margin: 0 auto;
-    width: 100%;
     margin: 1rem;
 
-   /* h4{
-      font-size: 1rem;
-    }*/
-
     .trending-container {
-      width: 95%;
+      width: inherit;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-     // grid-template-rows: 1fr 1fr;
-     // row-gap:1.2rem;
+      grid-template-columns: repeat(2, 1fr) ;
 
       img {
         height: 40px;
       }
 
       span {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
       }
 
       .price {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
       }
     }
   }
