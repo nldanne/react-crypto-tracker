@@ -15,18 +15,17 @@ const CoinTable = () => {
 
   const { currency } = CryptoState();
 
-  const fetchCoins = async () => {
-    const { data } = await axios.get(CoinList(currency));
-
-    setCoins(data);
-  };
-
-
   const handleSearchInput = (event) => {
     setSearch(event.target.value);
   };
 
   useEffect(() => {
+    const fetchCoins = async () => {
+      const { data } = await axios.get(CoinList(currency));
+  
+      setCoins(data);
+    };
+    
     fetchCoins();
   }, [currency]);
 
